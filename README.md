@@ -1,5 +1,18 @@
 # Clone X — Flutter SIO2-SLAM
 
+## Conserver le fond entre deux lancements Web
+
+Dans PowerShell, lancer `./tool/run_web.ps1`, puis ouvrir
+`http://localhost:55174` dans Chrome habituel. Utiliser cette même adresse et
+ce même profil de navigateur à chaque relance. Dans VS Code, la configuration
+« Web — paramètres persistants » lance le même serveur.
+
+La couleur est enregistrée avec `SharedPreferencesAsync`. Sur le Web, le stockage
+appartient au profil du navigateur et à l'adresse (port compris). Le Chrome de
+débogage lancé par Flutter utilise un profil temporaire ; utiliser son navigateur
+habituel évite de perdre les préférences en fermant la session de débogage.
+Après l'arrêt et la relance du serveur, recharger la page dans Chrome.
+
 Projet pédagogique basé sur le support de la promotion 2027.
 
 - Login avec validation de l’email et mot de passe de 12 caractères minimum.

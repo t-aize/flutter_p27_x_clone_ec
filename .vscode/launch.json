@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Web — paramètres persistants",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "web-server",
+      "toolArgs": [
+        "--web-hostname", "localhost",
+        "--web-port", "55174"
+      ]
+    }
+  ]
+}
+a
